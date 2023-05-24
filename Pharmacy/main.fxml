@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="z1.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="650.0" stroke="#eeeeee" strokeType="INSIDE" width="219.0" />
+      <ImageView fitHeight="160.0" fitWidth="219.0" pickOnBounds="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\Pharmacy Main Logo 2400x1800.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Search" layoutX="234.0" layoutY="14.0" prefHeight="42.0" prefWidth="250.0" promptText="Search" />
+      <Button fx:id="Inventory" layoutX="32.0" layoutY="201.0" mnemonicParsing="false" onAction="#Inventory" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #eeeeee;" text="Inventory" textFill="#148dd2">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font></Button>
+      <Button fx:id="AddMedicine" layoutX="32.0" layoutY="273.0" mnemonicParsing="false" onAction="#AddMedicine" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #eeeeee;" text="    Add medicine" textFill="#148dd2">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font></Button>
+      <Button fx:id="DelMedicine" layoutX="32.0" layoutY="339.0" mnemonicParsing="false" onAction="#DelMedicine" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #eeeeee;" text="      Delete medicine" textFill="#148dd2">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font></Button>
+      <Button fx:id="LogOut" layoutX="32.0" layoutY="583.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="29.0" prefWidth="108.0" style="-fx-background-color: #eeeeee;" text="Log out" textFill="#148dd2">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="19.0" fitWidth="18.0" layoutX="38.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\log out.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="32.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\package.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="32.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\add medicine.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="32.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\del medicine.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="ViewMedicines1" editable="false" layoutX="226.0" layoutY="125.0" prefHeight="518.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" />
+      <TextArea fx:id="ViewMedicines2" editable="false" layoutX="334.0" layoutY="125.0" prefHeight="518.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" />
+      <TextArea fx:id="ViewMedicines3" editable="false" layoutX="442.0" layoutY="125.0" prefHeight="518.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="658.0" layoutY="96.0" text="Quantity">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="96.0" text="Weight">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="96.0" text="Name">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="96.0" text="ID">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="96.0" text="Price">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="96.0" text="Usage">
+         <font>
+            <Font name="AGA Arabesque Desktop" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ViewMedicines4" editable="false" layoutX="550.0" layoutY="125.0" prefHeight="518.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" />
+      <TextArea fx:id="ViewMedicines5" editable="false" layoutX="658.0" layoutY="125.0" prefHeight="518.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" />
+      <TextArea fx:id="ViewMedicines6" editable="false" layoutX="766.0" layoutY="125.0" prefHeight="518.0" prefWidth="175.0" style="-fx-background-color: #ffffff;" />
+      <Button fx:id="Searchb" layoutX="426.0" layoutY="20.0" minHeight="18.0" minWidth="36.0" mnemonicParsing="false" onAction="#Searchb" prefHeight="30.0" prefWidth="36.0" style="-fx-background-color: #ffffff;" />
+      <ImageView fitHeight="22.0" fitWidth="42.0" layoutX="453.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\xxazo\OneDrive\المستندات\NetBeansProjects\z1\search.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Labels" layoutX="235.0" layoutY="63.0" prefHeight="18.0" prefWidth="250.0" textFill="RED" />
+   </children>
+</AnchorPane>
